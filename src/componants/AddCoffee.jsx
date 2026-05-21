@@ -13,17 +13,17 @@ export default function AddCoffee() {
             <div className="flex  flex-col">
               <span >Name</span>
               <input
-                className=" p-1 mt-2 bg-white rounded-sm"
+                className=" p-1 mt-2 input input-warning bg-white rounded-sm"
                 type="text"
                 name="name"
-                placeholder="name"
+                placeholder="name"      
                 id=""
               />
             </div>
             <div className="flex  my-2 flex-col">
               <span >Supplier</span>
               <input
-                className=" p-1 mt-2 bg-white rounded-sm"
+                className=" p-1 mt-2 input input-warning bg-white rounded-sm"
                 type="text"
                 name="supplier"
                 placeholder="enter supplier"
@@ -33,7 +33,7 @@ export default function AddCoffee() {
             <div className="flex  flex-col">
               <span >Category</span>
               <input
-                className=" p-1 mt-2 bg-white rounded-sm"
+                className=" p-1 mt-2 input input-warning bg-white rounded-sm"
                 type="text"
                 name="category"
                 placeholder="enter category"
@@ -47,7 +47,7 @@ export default function AddCoffee() {
              <div className="flex flex-col" >
                <span>Quantity</span>
               <input
-                className=" mt-2 p-1 bg-white rounded-sm"
+                className=" mt-2 p-1 input input-warning bg-white rounded-sm"
                 type="text"
                 name="quantity"
                 placeholder="available quantity"
@@ -57,7 +57,7 @@ export default function AddCoffee() {
              <div className="flex my-2 flex-col" >
                <span>Taste</span>
               <input
-                className=" mt-2 p-1 bg-white rounded-sm"
+                className=" mt-2 p-1 input input-warning bg-white rounded-sm"
                 type="text"
                 name="taste"
                 placeholder="enter taste"
