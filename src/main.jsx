@@ -9,14 +9,16 @@ import UpdateCoffee from './componants/UpdateCoffee.jsx'
 const router = createBrowserRouter([
   {
     path:"/",
-    element: <App></App>
+    element: <App></App>,
+    loader:()=>fetch('http://localhost:5000/coffees')
   },
   {
     path:"addcoffee",
     element:<AddCoffee/>
   },{
-    path:"updatecoffee",
-    element:<UpdateCoffee/>
+    path:"updatecoffee/:id",
+    element:<UpdateCoffee/>,
+    loader: ({params})=>fetch(`http://localhost:5000/coffees/${params.id}`)
   }
 ]);
 createRoot(document.getElementById('root')).render(
